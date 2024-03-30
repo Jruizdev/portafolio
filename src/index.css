@@ -241,6 +241,15 @@ input::-ms-input-placeholder {
   background-color: var(--color-componentes-dark);
 }
 
+.contenido {
+  scale: 0;
+  opacity: 0;
+  padding-top: 50px;
+  animation: deslizar-contenido linear forwards;
+  animation-timeline: view();
+  animation-range: entry -100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
 
   .tags-wrapper {
@@ -303,13 +312,13 @@ input::-ms-input-placeholder {
       display: flex;
       min-height: 90vh;
     }
-    .contenido {
+    /*.contenido {
       scale: 0;
       opacity: 0;
       padding-top: 50px;
       animation: deslizar-contenido linear forwards;
       animation-timeline: view();
       animation-range: entry -100%;
-    }
+    }*/
   }
 }
