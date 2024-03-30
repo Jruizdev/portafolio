@@ -241,15 +241,6 @@ input::-ms-input-placeholder {
   background-color: var(--color-componentes-dark);
 }
 
-.contenido {
-  scale: 0;
-  opacity: 0;
-  padding-top: 50px;
-  animation: deslizar-contenido linear forwards;
-  animation-timeline: view();
-  animation-range: entry -100%;
-}
-
 @media (prefers-reduced-motion: no-preference) {
 
   .tags-wrapper {
@@ -294,7 +285,7 @@ input::-ms-input-placeholder {
   }
   @keyframes deslizar-contenido {
     to {
-      scale: 1;
+      transform: scale(1);
       opacity: 1;
     }
   }
@@ -312,13 +303,15 @@ input::-ms-input-placeholder {
       display: flex;
       min-height: 90vh;
     }
-    /*.contenido {
-      scale: 0;
+    .contenido {
+      transform: scale(0);
       opacity: 0;
       padding-top: 50px;
-      animation: deslizar-contenido linear forwards;
-      animation-timeline: view();
+      animation-name: deslizar-contenido;
+      animation-fill-mode: forwards;
+      animation-duration: 1ms;
+      animation-timeline: view(block);
       animation-range: entry -100%;
-    }*/
+    }
   }
 }
