@@ -32,7 +32,7 @@ function App () {
               <h3>Hola, soy</h3>
               <h1><strong>Jonathan Ruiz Olvera</strong></h1>
               <h3 className="texto-resaltar">Desarrollador de Software</h3>
-              <div className="row w-100 text-center text-md-start">
+              <div className="row w-100 text-center text-md-start m-auto">
                 <div className="col-12">
                   <a href='http://jrodev.x10.mx/recursos/CV%20%Jonathan%20%Ruiz.pdf' target='_blank' download="CV_Jonathan_Ruiz.pdf">
                     <button className="btn btn-primary me-3 px-3 rounded-pill">Descargar CV</button>
