@@ -35,7 +35,7 @@ function App () {
               <div className="row w-100 text-center text-md-start">
                 <div className="col-12">
                   <a href='http://jrodev.x10.mx/recursos/CV%20%Jonathan%20%Ruiz.pdf' target='_blank' download="CV_Jonathan_Ruiz.pdf">
-                    <button className="btn btn-primary me-3">Descargar CV</button>
+                    <button className="btn btn-primary me-3 px-3 rounded-pill">Descargar CV</button>
                   </a>
                   <OverlayTrigger overlay={ tooltip('Perfil de GitHub') } placement="bottom">
                     <a href="https://github.com/Jruizdev" target='_blank'>

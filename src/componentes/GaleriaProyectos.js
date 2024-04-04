@@ -34,7 +34,7 @@ function PatronRejilla (
     let etiquetas = [];
     
     habilidades.forEach (habilidad => {
-      etiquetas.push (<li key={habilidad} className='h-100 rounded'>{habilidad}</li>);
+      etiquetas.push (<li key={habilidad} className='h-100 rounded'>{ habilidad }</li>);
     });
 
     if (bloqueGrande (i)) fila.push (

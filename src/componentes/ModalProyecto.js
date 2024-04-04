@@ -33,7 +33,7 @@ export const ModalProyecto = (props) => {
                             <div className='row w-100 justify-content-center m-auto'>
                                 {(props.enlace !== '') && 
                                     <Button 
-                                    className='col-12 col-lg-10 m-2' 
+                                    className='col-12 col-lg-10 m-2 shadow rounded-pill' 
                                     variant='primary' 
                                     href = { props.enlace } 
                                     target='blank'>
@@ -42,7 +42,7 @@ export const ModalProyecto = (props) => {
                                 }
                                 {(props.repositorio !== '' && props.repositorio != null) && 
                                     <Button 
-                                    className='col-12 col-lg-10 m-2' 
+                                    className='col-12 col-lg-10 m-2 shadow rounded-pill' 
                                     variant='secondary' 
                                     href = { props.repositorio } 
                                     target='blank'>
